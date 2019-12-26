@@ -1,0 +1,5 @@
+D:\Employee\EmployeeSystem\Employee.Models\bin\Debug\Employee.Models.dll
+D:\Employee\EmployeeSystem\Employee.Models\bin\Debug\Employee.Models.pdb
+D:\Employee\EmployeeSystem\Employee.Models\obj\Debug\Employee.Models.csproj.CoreCompileInputs.cache
+D:\Employee\EmployeeSystem\Employee.Models\obj\Debug\Employee.Models.dll
+D:\Employee\EmployeeSystem\Employee.Models\obj\Debug\Employee.Models.pdb

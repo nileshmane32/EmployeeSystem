@@ -1,0 +1,16 @@
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\Employee.Services.dll.config
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\Employee.Services.dll
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\Employee.Services.pdb
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\Employee.Models.dll
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\EntityFramework.dll
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\Newtonsoft.Json.dll
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\Employee.Models.pdb
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\EntityFramework.xml
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\Employee\EmployeeSystem\Employee.Services\bin\Debug\Newtonsoft.Json.xml
+D:\Employee\EmployeeSystem\Employee.Services\obj\Debug\Employee.Services.csprojAssemblyReference.cache
+D:\Employee\EmployeeSystem\Employee.Services\obj\Debug\Employee.Services.csproj.CoreCompileInputs.cache
+D:\Employee\EmployeeSystem\Employee.Services\obj\Debug\Employee.Services.csproj.CopyComplete
+D:\Employee\EmployeeSystem\Employee.Services\obj\Debug\Employee.Services.dll
+D:\Employee\EmployeeSystem\Employee.Services\obj\Debug\Employee.Services.pdb
