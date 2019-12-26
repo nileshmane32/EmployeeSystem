@@ -14,3 +14,19 @@ D:\Employee\EmployeeSystem\Employee.Services\obj\Debug\Employee.Services.csproj.
 D:\Employee\EmployeeSystem\Employee.Services\obj\Debug\Employee.Services.csproj.CopyComplete
 D:\Employee\EmployeeSystem\Employee.Services\obj\Debug\Employee.Services.dll
 D:\Employee\EmployeeSystem\Employee.Services\obj\Debug\Employee.Services.pdb
+E:\Gits Source Code\Employee.Services\bin\Debug\Employee.Services.dll.config
+E:\Gits Source Code\Employee.Services\bin\Debug\Employee.Services.dll
+E:\Gits Source Code\Employee.Services\bin\Debug\Employee.Services.pdb
+E:\Gits Source Code\Employee.Services\bin\Debug\Employee.Models.dll
+E:\Gits Source Code\Employee.Services\bin\Debug\EntityFramework.dll
+E:\Gits Source Code\Employee.Services\bin\Debug\EntityFramework.SqlServer.dll
+E:\Gits Source Code\Employee.Services\bin\Debug\Newtonsoft.Json.dll
+E:\Gits Source Code\Employee.Services\bin\Debug\Employee.Models.pdb
+E:\Gits Source Code\Employee.Services\bin\Debug\EntityFramework.xml
+E:\Gits Source Code\Employee.Services\bin\Debug\EntityFramework.SqlServer.xml
+E:\Gits Source Code\Employee.Services\bin\Debug\Newtonsoft.Json.xml
+E:\Gits Source Code\Employee.Services\obj\Debug\Employee.Services.csprojAssemblyReference.cache
+E:\Gits Source Code\Employee.Services\obj\Debug\Employee.Services.csproj.CoreCompileInputs.cache
+E:\Gits Source Code\Employee.Services\obj\Debug\Employee.Services.csproj.CopyComplete
+E:\Gits Source Code\Employee.Services\obj\Debug\Employee.Services.dll
+E:\Gits Source Code\Employee.Services\obj\Debug\Employee.Services.pdb

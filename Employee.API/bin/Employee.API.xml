@@ -536,6 +536,53 @@
             <param name="filter"></param>
             <returns></returns>
         </member>
+        <member name="M:Employee.API.Controllers.EmployeeController.SaveEmployeeDetails(Employee.Models.AppModel.AppEmployeeDetails)">
+            <summary>
+            This Method use save record.
+            </summary>
+            <param name="empDetails"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Employee.API.Controllers.EmployeeController.UpdateEmployeeDetails(Employee.Models.AppModel.AppEmployeeDetails)">
+            <summary>
+            This Method use update record.
+            </summary>
+            <param name="empDetails"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Employee.API.Controllers.IEmployeeController">
+            <summary>
+            Interface for Employee Controller.
+            </summary>
+        </member>
+        <member name="M:Employee.API.Controllers.IEmployeeController.GetEmployeeDetailsList(Employee.Models.AppModel.AppFilters)">
+            <summary>
+            Bind Employee Details List.
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Employee.API.Controllers.IEmployeeController.DeleteEmployee(Employee.Models.AppModel.AppFilters)">
+            <summary>
+            This Method use hard delete.
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Employee.API.Controllers.IEmployeeController.SaveEmployeeDetails(Employee.Models.AppModel.AppEmployeeDetails)">
+            <summary>
+            This Method use save record.
+            </summary>
+            <param name="empDetails"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Employee.API.Controllers.IEmployeeController.UpdateEmployeeDetails(Employee.Models.AppModel.AppEmployeeDetails)">
+            <summary>
+            This Method use update record.
+            </summary>
+            <param name="empDetails"></param>
+            <returns></returns>
+        </member>
         <member name="T:Employee.API.Controllers.MasterApiController">
             <summary>
             Master Controller responsible for all common methods which will be used by derived controllers

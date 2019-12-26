@@ -21,6 +21,8 @@ namespace Employee.Models.DBModel
 
         public String Location { get; set; }
 
+        public DateTime? CreatedDate { get; set; }
+
         #endregion Instance Properties
     }
 }

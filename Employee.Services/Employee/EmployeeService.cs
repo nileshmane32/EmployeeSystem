@@ -1,4 +1,5 @@
 ﻿using Employee.Models.AppModel;
+using Employee.Models.DBModel;
 using System;
 using System.Linq;
 
@@ -69,7 +70,7 @@ namespace Employee.Services.Employee
         }
 
         /// <summary>
-        /// 
+        /// This Method use hard delete.
         /// </summary>
         /// <param name="filter"></param>
         /// <returns></returns>
@@ -95,6 +96,110 @@ namespace Employee.Services.Employee
                             dbTrans.Commit();
                             callResponse.Status = true;
                             callResponse.Message = "Employee deleted successfully.";
+                        }
+                        catch (Exception ex)
+                        {
+                            dbTrans.Rollback();
+                            callResponse.Status = false;
+                            callResponse.Message = "Error :" + ex.Message;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                callResponse.Status = false;
+                callResponse.Message = "Error :" + ex.Message;
+            }
+            return callResponse;
+        }
+
+        /// <summary>
+        /// This Method use save record.
+        /// </summary>
+        /// <param name="empDetails"></param>
+        /// <returns></returns>
+        public CallResponse SaveEmployeeDetails(AppEmployeeDetails empDetails)
+        {
+            CallResponse callResponse = new CallResponse();
+            try
+            {
+                using (var context = new DBEntities(ConnectionString))
+                {
+                    using (var dbTrans = context.Database.BeginTransaction())
+                    {
+                        try
+                        {
+                            EmployeeDetails rcdEmp = context.EmployeeDetails.Where(c => c.EmpId == empDetails.EmpId).FirstOrDefault();
+
+                            if (rcdEmp == null)
+                            {
+                                rcdEmp = new EmployeeDetails();
+
+                                rcdEmp.Name = empDetails.Name;
+                                rcdEmp.Age = empDetails.Age;
+                                rcdEmp.MaritalStatus = empDetails.MaritalStatus;
+                                rcdEmp.Salary = empDetails.Salary;
+                                rcdEmp.Location = empDetails.Location;
+                                rcdEmp.CreatedDate = DateTime.Now;
+                                context.EmployeeDetails.Add(rcdEmp);
+                                context.SaveChanges();
+                            }
+                            dbTrans.Commit();
+
+                            callResponse.Status = true;
+                            callResponse.Message = "Record save successfully";
+                        }
+                        catch (Exception ex)
+                        {
+                            dbTrans.Rollback();
+                            callResponse.Status = false;
+                            callResponse.Message = "Error :" + ex.Message;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                callResponse.Status = false;
+                callResponse.Message = "Error :" + ex.Message;
+            }
+            return callResponse;
+        }
+
+        /// <summary>
+        /// This Method use update record.
+        /// </summary>
+        /// <param name="empDetails"></param>
+        /// <returns></returns>
+        public CallResponse UpdateEmployeeDetails(AppEmployeeDetails empDetails)
+        {
+            CallResponse callResponse = new CallResponse();
+            try
+            {
+                using (var context = new DBEntities(ConnectionString))
+                {
+                    using (var dbTrans = context.Database.BeginTransaction())
+                    {
+                        try
+                        {
+                            var rcdEmp = context.EmployeeDetails.Where(c => c.EmpId == empDetails.EmpId).FirstOrDefault();
+
+                            if (rcdEmp != null)
+                            {
+                                rcdEmp.Name = empDetails.Name;
+                                rcdEmp.Age = empDetails.Age;
+                                rcdEmp.MaritalStatus = empDetails.MaritalStatus;
+                                rcdEmp.Salary = empDetails.Salary;
+                                rcdEmp.Location = empDetails.Location;
+                                rcdEmp.CreatedDate = DateTime.Now;
+                                context.Entry(rcdEmp).State = System.Data.Entity.EntityState.Modified;
+                                context.SaveChanges();
+                            }
+                            dbTrans.Commit();
+
+                            callResponse.Status = true;
+                            callResponse.Message = "Record updated successfully";
                         }
                         catch (Exception ex)
                         {

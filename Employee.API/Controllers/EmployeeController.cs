@@ -42,5 +42,29 @@ namespace Employee.API.Controllers
             CallResponse callResponse = _service.DeleteEmployee(filter);
             return callResponse;
         }
+
+        /// <summary>
+        /// This Method use save record.
+        /// </summary>
+        /// <param name="empDetails"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public CallResponse SaveEmployeeDetails([FromBody]AppEmployeeDetails empDetails) 
+        {
+            CallResponse callResponse = _service.SaveEmployeeDetails(empDetails);
+            return callResponse;
+        }
+
+        /// <summary>
+        /// This Method use update record.
+        /// </summary>
+        /// <param name="empDetails"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public CallResponse UpdateEmployeeDetails([FromBody]AppEmployeeDetails empDetails)
+        {
+            CallResponse callResponse = _service.UpdateEmployeeDetails(empDetails);
+            return callResponse;
+        }
     }
 }
